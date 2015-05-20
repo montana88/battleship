@@ -2,7 +2,7 @@
 realtime version of Battleship created with meteor.js
 
 # Synopsis
-This repository contains the package of the game battleship. This version is a 1p game.
+This repository contains the package of the game battleship. This version is a 1p game. And is played by typing coords in the input field at the right bottom.
 
 # Installation
 for installation check the docs of meteor.js <a href="http://docs.meteor.com/#/basic/quickstart" target="_blank">Here</a>

@@ -4,7 +4,7 @@ if (Meteor.isClient) {
     Session.setDefault('messageText', '');
     Session.setDefault('guesses', 0);
 
-    Template.test.helpers({
+    Template.board.helpers({
         messageText: function () {
             return Session.get('messageText');
         }
@@ -109,8 +109,9 @@ if (Meteor.isClient) {
 
     var view = {
         displayMessage: function(msg) {
+            Session.set('messageText', msg);/*
             var messageArea = document.getElementById("messageArea");
-            messageArea.innerHTML = msg;
+            messageArea.innerHTML = msg;*/
         },
 
         displayHit: function(location) {
@@ -163,7 +164,7 @@ if (Meteor.isClient) {
         return null;
     }
 
-    Template.test.events({
+    Template.board.events({
         "submit .guess": function (event) {
             // This function is called when the new task form is submitted
 
